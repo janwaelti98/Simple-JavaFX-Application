@@ -1,0 +1,102 @@
+/* ApplicationUI */
+
+* {
+    -fx-primary: #004dff;
+    -fx-secondary: #ff9797;
+    -fx-primarytext: #B2B2B2;
+}
+
+.root {
+    -fx-padding: 10;
+    -fx-background-color: white;
+}
+
+.primary-button {
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+}
+
+.primary-button:hover {
+}
+
+.secondary-button {
+    -fx-background-color: white;
+    -fx-text-fill: -fx-primary;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+}
+
+.secondary-button:hover {
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: white;
+}
+
+#bold {
+    -fx-font-family: "Roboto";
+    -fx-font-weight: bold; /*doesn't work*/
+}
+
+/* DetailsUI */
+
+#siteTitle {
+    -fx-font-size: 30;
+    -fx-text-fill: -fx-primary;
+}
+
+.label {
+    -fx-font-family: "Roboto";
+    -fx-font-weight: bold; /*doesn't work*/
+}
+
+.text-area {
+    -fx-background-color: white;
+    -fx-border-radius: 5;
+    -fx-wrap-text: true;
+    -fx-highlight-fill: -fx-primary;
+}
+
+.text-area:focused {
+    -fx-border-color: -fx-primary;
+}
+
+.text-field {
+    -fx-background-color: white;
+    -fx-background-radius: 5;
+    -fx-highlight-fill: -fx-primary;
+}
+
+.text-field:focused {
+    -fx-border-color: -fx-primary;
+    -fx-border-radius: 5;
+}
+
+.check-box .box {
+    -fx-background-color: white;
+    -fx-background-radius: 5;
+    -fx-body-color: white;
+}
+
+.check-box:selected .box {
+    -fx-background-color: -fx-primary;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: white;
+}
+
+/* TableViewUI */
+
+.table-row-cell:selected {
+    -fx-background-color: -fx-primary;
+    -fx-table-cell-border-color: -fx-primary;
+}
+
+.table-row-cell:selected .text {
+    -fx-fill: white;
+}
+
+.table-view .column-drag-header, .column-resize-line {
+    -fx-background-color: -fx-primary;
+}
